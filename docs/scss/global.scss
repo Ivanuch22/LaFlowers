@@ -1,0 +1,16 @@
+body {
+   background-color: #e8e8e8;
+   color: #000;
+}
+.container {
+   margin: 0 auto;
+   max-width: 1280px;
+   position: relative;
+}
+.firstSectionBg {
+   background-image: url(../img/FirstBg.png);
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-size: 30%;
+   min-height: 100vh;
+}

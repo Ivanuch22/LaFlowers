@@ -28,6 +28,19 @@
          top: 19px;
       }
    }
+   &__communication {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 50px;
+   }
+   &__link {
+      margin: 8px 0;
+   }
 }
 .menu {
    display: flex;

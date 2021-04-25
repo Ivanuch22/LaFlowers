@@ -238,21 +238,46 @@
    }
    &__button {
       position: absolute;
-      bottom: 24px;
-      left: 50%;
-      background-color: transparent;
-      transform: translateX(-50%);
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 300;
-      font-size: 48px;
-      line-height: 58px;
-      text-indent: 7px;
-      text-transform: capitalize;
-      color: #5a7421;
+   }
+}
+
+.fullScrinSection {
+   max-height: 100vh;
+
+   &__bg {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 85vh;
+   }
+   &__text {
+      max-width: 323px;
+      display: flex;
+      height: 85vh;
+      margin-left: 85px;
+      align-items: center;
+      font-family: "Cormorant Infant", serif;
+      font-weight: bold;
+      text-align: left;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #ffffff;
+      position: relative;
+      &::before {
+         content: "";
+         top: 0;
+         left: -85px;
+         bottom: 0;
+         width: 608px;
+         position: absolute;
+         background: rgba(251, 251, 251, 0.5);
+      }
+   }
+   &__button {
+      bottom: 0px;
       .arrow {
-         position: relative;
-         bottom: 15px;
-         transform: translateX(-24%);
+         transform: translateX(-36%);
       }
    }
 }

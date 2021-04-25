@@ -22,3 +22,21 @@ body {
    background-position: left bottom;
    background-size: 43% auto;
 }
+.button {
+   position: relative;
+   bottom: 24px;
+   left: 50%;
+   background-color: transparent;
+   transform: translateX(-50%);
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+   font-size: 48px;
+   line-height: 58px;
+   text-indent: 7px;
+   color: #5a7421;
+   .arrow {
+      position: relative;
+      bottom: 15px;
+      transform: translateX(-24%);
+   }
+}

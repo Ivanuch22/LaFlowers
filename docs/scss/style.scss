@@ -80,6 +80,9 @@
    opacity: 1;
 }
 
+//////////////////////////////
+//////////////////////////////
+
 .firstSectionBg {
    position: relative;
    &__block {
@@ -176,4 +179,80 @@
    transform: translateX(-50%) translateY(3040%) rotate(270deg);
    left: 90px;
    top: 0;
+}
+//////////////////////////////
+//////////////////////////////
+.secondSection {
+   &__block {
+      max-width: 810px;
+      margin: 0 auto;
+      padding-left: 130px;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+   }
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 58px;
+   }
+   &__description {
+      font-family: "Cormorant Infant", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      max-width: 85%;
+      line-height: 29px;
+      text-align: right;
+   }
+   &__row {
+      margin-top: 42px;
+      display: flex;
+   }
+   &__link {
+      margin-left: 20px;
+      display: block;
+      width: 54px;
+      height: 54px;
+      &:last-child {
+         font-family: "Cormorant Infant", serif;
+         font-weight: bold;
+         font-size: 24px;
+         line-height: 29px;
+         text-align: center;
+         width: auto;
+         height: auto;
+         text-transform: uppercase;
+         color: #fff;
+         background-color: #81a459;
+         padding: 12px 33px;
+      }
+   }
+   &__img {
+      width: 100%;
+      height: 100%;
+   }
+   &__button {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      background-color: transparent;
+      transform: translateX(-50%);
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 58px;
+      text-indent: 7px;
+      text-transform: capitalize;
+      color: #5a7421;
+      .arrow {
+         position: relative;
+         bottom: 15px;
+         transform: translateX(-24%);
+      }
+   }
 }

@@ -1,11 +1,14 @@
 @import "../scss/_nuleStyle";
-@import "../scss/global.scss";
+@import "../scss/_global.scss";
 // font-family: 'Cormorant Garamond', serif;
 // font-family: 'Cormorant Infant', serif;
 .header {
    display: flex;
    padding: 23px 0 45px 10px;
    margin-bottom: 50px;
+   .logo {
+      opacity: 1;
+   }
    &__button {
       position: relative;
       cursor: pointer;
@@ -284,6 +287,11 @@
 }
 .sliderSection {
    padding-top: 30px;
+   height: 90vh;
+   position: relative;
+   .container {
+      position: initial;
+   }
 }
 .swiper {
    position: relative;
@@ -298,6 +306,7 @@
       max-width: 1080px;
       margin: 0 auto;
       height: auto;
+      margin-bottom: 20px;
    }
    &-block {
       width: 255px;
@@ -393,7 +402,125 @@
 
    padding: 18px 0;
 }
-.slider__button {
-   bottom: -26px;
-   padding-bottom: 26px;
+.ContactSection {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   &::before {
+      content: "";
+      background-image: url(../img/ContactBgLeft.png);
+      width: 40%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom left;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 105vh;
+   }
+   &::after {
+      content: "";
+      background-image: url(../img/contactBgRight.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right bottom;
+      height: 100vh;
+      width: 60%;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      bottom: 0;
+   }
+   &__button {
+      position: absolute;
+      top: 20px;
+      bottom: auto;
+   }
+   &__block {
+      margin-left: 260px;
+   }
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-size: 24px;
+      line-height: 29px;
+      text-indent: 7px;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+   }
+   &__row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   &__img {
+      display: block;
+      width: 36px;
+      height: 32px;
+   }
+   &__colum {
+      margin-left: 15px;
+   }
+   &__colum-title,
+   &__colum-link {
+      font-family: "Cormorant Infant", serif;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000;
+      text-transform: uppercase;
+   }
+   &__text {
+      font-family: "Cormorant Infant", serif;
+      font-size: 24px;
+      line-height: 29px;
+      text-indent: 7px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+   }
+   &__item {
+      margin-right: 8px;
+      &:first-child {
+         margin-right: 21px;
+      }
+      &:nth-child(3) {
+         .ContactSection__item {
+            width: 73px;
+            height: 45px;
+         }
+      }
+   }
+   &__link {
+      width: 54px;
+      height: 54px;
+   }
+   &__link-img {
+      width: 100%;
+      height: auto;
+   }
+}
+
+.footer {
+   &__row {
+      padding: 17px 0 47px;
+      padding-left: 52px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+   }
+   &__navigation {
+      width: 635px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      justify-content: space-between;
+   }
+   &__link {
+      font-family: "Cormorant Infant", serif;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #000000;
+   }
 }

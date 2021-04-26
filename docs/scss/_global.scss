@@ -40,3 +40,14 @@ body {
       transform: translateX(-24%);
    }
 }
+.logo {
+   opacity: 0.7;
+   &__link {
+      width: 300px;
+      height: auto;
+   }
+   &__img {
+      width: 100%;
+      height: auto;
+   }
+}

@@ -5,13 +5,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>LaFlowers</title>
+   <title>Страница товара</title>
    <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/card.css">
 </head>
 
 <body>
@@ -25,6 +25,7 @@
                   <img class="logo__img" src="img/logo-La_flowers_2.svg" alt="">
                </a>
             </div>
+            <div class="header__text">доставляем свежие цветы и <br> яркие эмоции прямо до вашего дома</div>
             <div class="menu">
                <div class="menu__colum">
                   <ul>
@@ -138,47 +139,76 @@
                </a>
             </div>
          </header>
-         <button class="catalog__link">каталог цветов <br>
-            и букетов</button>
-         <ul class="firstSectionBg__block">
-            <li class="firstSectionBg__li small">
-               <a class="firstSectionBg__img" href="#" style="background-image: url(img/DSC0613.jpg);">
-                  <span class="firstSectionBg__link">ПОЛЕВЫЕ ЦВЕТЫ</span>
-               </a>
-            </li>
-            <li class="firstSectionBg__li small">
-               <a class="firstSectionBg__img" href="#" style="background-image: url(img/DSC0531.jpg);">
-                  <span class="firstSectionBg__link">ЭКЗОТИЧЕСКИЕ ЦВЕТЫ</span>
-               </a>
-            </li>
-            <li class="firstSectionBg__li big">
-               <a class="firstSectionBg__img" href="#" style="background-image: url(img/DSC06189.png);">
-                  <span class="firstSectionBg__link">БУКЕТЫ</span>
-               </a>
-            </li>
-            <li class="firstSectionBg__li bold ">
-               <a class="firstSectionBg__img" href="#" style="background-image: url(img/DSC05120.jpg);">
-                  <span class="firstSectionBg__link">СВАДЕБНЫЕ <br> БУКЕТЫ</span>
-               </a>
-
-            </li>
-         </ul>
-         <div class="arrow">
-            <img class="arrow-img" src="img/Arrow.svg" alt="">
+         <div class="card">
+            <h3 class="card__name">Название товара</h3>
+            <div class="card__block">
+               <div class="card__img" style="background-image: url(img/DSC0623.jpg);"></div>
+               <div class="card__block-right">
+                  <div class="card__price">3700 руб.</div>
+                  <button class="card__button">В корзину</button>
+                  <button class="card__button">Купить в 1 клик</button>
+                  <div class="card__description">Характеристики</div>
+                  <div class="card__collor">Цвет:
+                     <a class="card__color-link" href="#"> белый</a>,
+                     <a class="card__color-link" href="#">персиковый</a>
+                  </div>
+                  <div class="card__composition">Состав букета:
+                     <a class="card__color-link" href="#">пионовидная роза</a>,
+                     <a class="card__color-link" href="#">Маттиола</a>,
+                     <a class="card__color-link" href="#">Фаленопсис (Орхидея)</a>,
+                     <a class="card__color-link" href="#">роза</a>
+                  </div>
+                  <div class="card__delivery-text">
+                     Доставка <br>
+                     Привезем завтра - 400 руб! <br>
+                     Важно: доставка с 8:00 до 9:00 и после 22:00 <br>
+                     оплачивается по двойному тарифу.
+                  </div>
+                  <div class="arrowDown">
+                     <img class="arrowDown__img" src="img/Arrow.svg" alt="arrow Down">
+                  </div>
+               </div>
+            </div>
          </div>
-         <div class="text">доставляем свежие цветы и <br> яркие эмоции прямо до вашего дома</div>
-         <ul class="firstSectionBg__block">
-            <li class="firstSectionBg__li medium">
-               <a class="firstSectionBg__img" href="#" style="background-image: url(img/DSC0623.jpg);">
-                  <span class="firstSectionBg__link">СУХОЦВЕТЫ</span>
-               </a>
-            </li>
-            <li class="firstSectionBg__li medium">
-               <a class="firstSectionBg__img" href="#" style="background-image: url(img/DSC05245.jpg);">
-                  <span class="firstSectionBg__link">ШЛЯПНЫЕ КОРЗИНЫ</span>
-               </a>
-            </li>
-         </ul>
+         <div class="card__text">С этим <span class="card__text--type">[тип т ов а ра]</span> часто берут:</div>
+         <div class="card__slider">
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide">
+                     <img class="swiper-img" src="img/00002627.jpg" alt="">
+                     <div class="swiper-title">Название товара</div>
+                     <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
+                     <div class="swiper-price">2500р</div>
+                     <button class="swiper-button">В Корзину</button>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                     <img class="swiper-img" src="img/00002627.jpg" alt="">
+                     <div class="swiper-title">Название товара</div>
+                     <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
+                     <div class="swiper-price">2500р</div>
+                     <button class="swiper-button">В Корзину</button>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                     <img class="swiper-img" src="img/TT-00001516_1.jpg" alt="">
+                     <div class="swiper-title">Название товара</div>
+                     <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
+                     <div class="swiper-price">2500р</div>
+                     <button class="swiper-button">В Корзину</button>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                     <img class="swiper-img" src="img/00003046_1.jpg" alt="">
+                     <div class="swiper-title">Название товара</div>
+                     <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
+                     <div class="swiper-price">2500р</div>
+                     <button class="swiper-button">В Корзину</button>
+                  </a>
+               </div>
+
+               <!-- If we need navigation buttons -->
+               <div class="swiper-next-arrow"></div>
+               <div class="swiper-prev-arrow"></div>
+            </div>
+         </div>
       </div>
    </section>
    <section class="secondSection">
@@ -204,119 +234,6 @@
                </div>
             </button>
          </div>
-      </div>
-   </section>
-   <section class="fullScrinSection">
-      <div class="fullScrinSection__bg" style="background-image: url(img/FullScrin.jpg);">
-         <div class="container">
-            <h4 class="fullScrinSection__text">Радуйте себя прекрасными цветами каждый день!</h4>
-         </div>
-      </div>
-      <div class="container">
-         <button class="fullScrinSection__button button">
-            Новинки сезона
-         </button>
-      </div>
-   </section>
-   <section class="sliderSection">
-      <div class="container">
-         <div class="swiper">
-            <div class="swiper-container">
-               <!-- Additional required wrapper -->
-               <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <a href='card.html' class="swiper-slide">
-                     <div class="swiper-block">
-                        <div class="swiper-top">
-                           <img class="swiper__img" src="img/swiper4.jpg" alt="">
-                        </div>
-                        <div class="swiper-bottom">
-                           <h4 class="swiper__title">Название букета</h4>
-                           <p class="swiper__type">Тип букета - веенний</p>
-                           <p class="swiper__description">Описание букета</p>
-                           <p class="swiper__price">2500р</p>
-                           <button class="swiper__button">в корзину</button>
-                        </div>
-                     </div>
-                  </a>
-                  <a href='card.html' class="swiper-slide">
-                     <div class="swiper-block">
-                        <div class="swiper-top">
-                           <img class="swiper__img" src="img/swiper1.jpg" alt="">
-                        </div>
-                        <div class="swiper-bottom">
-                           <h4 class="swiper__title">Название букета</h4>
-                           <p class="swiper__type">Тип букета - веенний</p>
-                           <p class="swiper__description">Описание букета</p>
-                           <p class="swiper__price">2500р</p>
-                           <button class="swiper__button">в корзину</button>
-                        </div>
-                     </div>
-                  </a>
-                  <a href='card.html' class="swiper-slide">
-                     <div class="swiper-block ">
-                        <div class="discount">10%</div>
-                        <div class="swiper-top">
-                           <img class="swiper__img" src="img/swiper2.jpg" alt="">
-                        </div>
-                        <div class="swiper-bottom">
-                           <h4 class="swiper__title">Название букета</h4>
-                           <p class="swiper__type">Тип букета - веенний</p>
-                           <p class="swiper__description">Описание букета</p>
-                           <p class="swiper__price">2500р</p>
-                           <button class="swiper__button">в корзину</button>
-                        </div>
-                     </div>
-                  </a>
-                  <a href='card.html' class="swiper-slide">
-                     <div class="swiper-block">
-                        <div class="swiper-top">
-                           <img class="swiper__img" src="img/swiper1.jpg" alt="">
-                        </div>
-                        <div class="swiper-bottom">
-                           <h4 class="swiper__title">Название букета</h4>
-                           <p class="swiper__type">Тип букета - веенний</p>
-                           <p class="swiper__description">Описание букета</p>
-                           <p class="swiper__price">2500р</p>
-                           <button class="swiper__button">в корзину</button>
-                        </div>
-                     </div>
-                  </a>
-                  <a href='card.html' class="swiper-slide">
-                     <div class="swiper-block">
-                        <div class="swiper-top">
-                           <img class="swiper__img" src="img/swiper2.jpg" alt="">
-                        </div>
-                        <div class="swiper-bottom">
-                           <h4 class="swiper__title">Название букета</h4>
-                           <p class="swiper__type">Тип букета - веенний</p>
-                           <p class="swiper__description">Описание букета</p>
-                           <p class="swiper__price">2500р</p>
-                           <button class="swiper__button">в корзину</button>
-                        </div>
-                     </div>
-                  </a>
-                  <a href='card.html' class="swiper-slide">
-                     <div class="swiper-block">
-                        <div class="swiper-top">
-                           <img class="swiper__img" src="img/swiper4.jpg" alt="">
-                        </div>
-                        <div class="swiper-bottom">
-                           <h4 class="swiper__title">Название букета</h4>
-                           <p class="swiper__type">Тип букета - веенний</p>
-                           <p class="swiper__description">Описание букета</p>
-                           <p class="swiper__price">2500р</p>
-                           <button class="swiper__button">в корзину</button>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <!-- If we need navigation buttons -->
-               <div class="swiper-next-arrow"></div>
-               <div class="swiper-prev-arrow"></div>
-            </div>
-         </div>
-
       </div>
    </section>
    <section class="ContactSection">
@@ -402,18 +319,30 @@
       </div>
    </footer>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/main.min.js"></script>
    <script>
-      const swiper = new Swiper('.swiper-container', {
+      const newSiwper = new Swiper('.swiper-container', {
          navigation: {
             nextEl: '.swiper-next-arrow',
             prevEl: '.swiper-prev-arrow',
          },
          loop: true,
-         spaceBetween: 17,
-         slidesPerView: 4,
+         breakpoints: {
+            320: {
+               slidesPerView: 2,
+               spaceBetween: 10,
+            },
+            600: {
+               slidesPerView: 3,
+               spaceBetween: 40,
+            },
+            1024: {
+               spaceBetween: 25,
+               slidesPerView: 4,
+            }
+         }
       });
    </script>
-   <script src="js/main.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,191 @@
+@import "../scss/_nuleStyle";
+@import "../scss/global.scss";
+
+.secondSection {
+   margin-top: 100px;
+}
+.card {
+   &__name {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #5a7421;
+      margin: 41px 0 60px;
+   }
+   &__block {
+      display: flex;
+      max-width: 908px;
+      padding-left: 40px;
+      justify-content: space-between;
+      margin: 0 auto;
+      position: relative;
+   }
+   &__block-right {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      margin-left: 40px;
+   }
+   &__img {
+      min-width: 317px;
+      height: 390px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+   }
+   &__price {
+      font-size: 36px;
+      position: absolute;
+      line-height: 44px;
+      top: 20px;
+      right: 0;
+      text-transform: uppercase;
+   }
+   &__button {
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.68);
+      padding: 16px 33px;
+
+      display: block;
+      transition: all 0.4s;
+      &:hover {
+         color: #fff;
+         background-color: #5a7421;
+      }
+   }
+   &__description {
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      margin: 23px 0 36px;
+   }
+   &__collor {
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+   }
+   &__color-link {
+      color: #81a459;
+   }
+   &__composition {
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+   }
+   &__delivery-text {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 18px;
+      margin-top: 40px;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+   }
+   &__slider {
+      position: relative;
+      max-width: 1157px;
+      margin: 0 auto;
+   }
+   &__text {
+      margin-bottom: 55px;
+      margin-left: 100px;
+      margin-top: 25px;
+      font-family: "Cormorant Infant", serif;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-transform: uppercase;
+   }
+   &__text--type {
+      font-style: italic;
+      font-weight: normal;
+      font-size: inherit;
+      line-height: inherit;
+      text-transform: uppercase;
+   }
+}
+.swiper {
+   &-slide {
+      display: block;
+   }
+   &-img {
+      display: block;
+      max-width: 230px;
+      max-height: 246px;
+      margin-bottom: 12px;
+   }
+   &-title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+   }
+   &-description {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+   }
+   &-price {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      text-align: center;
+   }
+   &-button {
+      font-family: "Cormorant Infant", serif;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #5a7421;
+      background-color: transparent;
+      border: 1px solid #5a7421;
+      padding: 4px 11px;
+      position: relative;
+      margin-top: 5px;
+      left: 50%;
+      transition: all 0.4s;
+      transform: translateX(-50%);
+      &:hover {
+         background-color: #81a459;
+         color: #fff;
+      }
+   }
+   &-container {
+      position: initial;
+      max-width: 998px;
+      overflow: hidden;
+   }
+}
+.swiper-prev-arrow,
+.swiper-next-arrow {
+   cursor: pointer;
+   width: 42px;
+   z-index: 200;
+   opacity: 0.4;
+   height: 80px;
+   position: absolute;
+   top: 30%;
+   transform: translate(-50%);
+   background-image: url(../img/sliderArrow.svg);
+}
+.swiper-next-arrow {
+   right: 0;
+}
+.swiper-prev-arrow {
+   transform: rotate(180deg);
+   left: 0;
+}
+
+@import "_cardMedia.scss";

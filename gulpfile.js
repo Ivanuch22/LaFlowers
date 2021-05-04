@@ -10,7 +10,7 @@ const del = require('del');
 function styles() {
     return src('docs/scss/*.scss')
         .pipe(scss({ outputStyle: "compressed" }))
-        .pipe(concat('style.min.css'))
+        // .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true

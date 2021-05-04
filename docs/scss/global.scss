@@ -1,0 +1,351 @@
+body {
+   background-color: #e8e8e8;
+   color: #000;
+   margin: 0;
+}
+.container {
+   margin: 0 auto;
+   max-width: 1280px;
+   padding: 0 10px;
+   position: relative;
+}
+.button {
+   position: relative;
+   bottom: 24px;
+   left: 50%;
+   background-color: transparent;
+   transform: translateX(-50%);
+   font-family: "Cormorant Infant", serif;
+   font-weight: 300;
+   font-size: 48px;
+   line-height: 58px;
+   text-indent: 7px;
+   color: #5a7421;
+   .arrow {
+      position: relative;
+      bottom: 15px;
+      transform: translateX(-24%);
+   }
+}
+.header {
+   display: flex;
+   padding: 23px 0 45px 10px;
+   margin-bottom: 50px;
+   .logo {
+      opacity: 1;
+   }
+   &__button {
+      position: relative;
+      cursor: pointer;
+      top: 40px;
+      width: 42px;
+      height: 35px;
+      background-color: #000;
+      &::after,
+      &::before {
+         content: "";
+         position: absolute;
+         width: 101%;
+         height: 13px;
+         left: 0;
+         background-color: #e8e8e8;
+      }
+      &::after {
+         top: 3px;
+      }
+      &::before {
+         top: 19px;
+      }
+   }
+   &__communication {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 40%;
+      z-index: 2000;
+      transform: translateY(-50%);
+      right: 50px;
+   }
+   &__link {
+      margin: 8px 0;
+   }
+}
+.menu {
+   display: flex;
+   padding: 54px 45px 60px 11px;
+   background-color: #e9e9e9;
+   position: absolute;
+   justify-content: space-between;
+   top: 159px;
+   left: 0;
+   right: 0;
+   opacity: 0.98;
+   z-index: -1234;
+   transition: opacity 0.6s;
+   opacity: 0;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+   }
+   &__link {
+      color: #000;
+      font-family: "Cormorant Infant", serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: uppercase;
+   }
+}
+.menu--active {
+   z-index: 4;
+   opacity: 1;
+}
+
+.firstSectionBg {
+   background-image: url(../img/FirstBg.png);
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-size: 30%;
+   min-height: 100vh;
+   position: relative;
+}
+.secondSection {
+   min-height: 100vh;
+   background-image: url(../img/SecondBg.png);
+   background-repeat: no-repeat;
+   background-position: left bottom;
+   background-size: 43% auto;
+}
+
+.secondSection {
+   &__row-block {
+      display: flex;
+      align-items: center;
+      .secondSection__link {
+         &:last-child {
+            background-color: transparent;
+            padding: 0;
+         }
+      }
+   }
+   &__block {
+      max-width: 810px;
+      margin: 0 auto;
+      padding-left: 130px;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+   }
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: bold;
+      font-size: 48px;
+      text-align: right;
+      line-height: 58px;
+   }
+   &__description {
+      font-family: "Cormorant Infant", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      max-width: 85%;
+      line-height: 29px;
+      text-align: right;
+   }
+   &__row {
+      margin-top: 42px;
+      display: flex;
+   }
+   &__link {
+      margin-left: 20px;
+      display: block;
+      width: 54px;
+      height: 54px;
+   }
+
+   &__img {
+      width: 100%;
+      height: 100%;
+   }
+   &__button {
+      border: none;
+      position: absolute;
+   }
+}
+.buttonSecond {
+   text-decoration: none;
+   font-family: "Cormorant Infant", serif;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 35px;
+   text-align: center;
+   width: auto;
+   height: auto;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: #81a459;
+   padding: 12px 33px;
+   width: auto;
+}
+
+.logo {
+   opacity: 0.7;
+   &__link {
+      width: 300px;
+      height: auto;
+   }
+   &__img {
+      width: 100%;
+      height: auto;
+   }
+}
+
+.ContactSection {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   &::before {
+      content: "";
+      background-image: url(../img/ContactBgLeft.png);
+      width: 40%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom left;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 105vh;
+   }
+   &::after {
+      content: "";
+      background-image: url(../img/contactBgRight.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right bottom;
+      height: 100vh;
+      width: 60%;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      bottom: 0;
+   }
+   &__button {
+      border: none;
+      position: absolute;
+      top: 20px;
+      bottom: auto;
+   }
+   &__block {
+      margin-left: 260px;
+   }
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-size: 24px;
+      line-height: 29px;
+      text-indent: 7px;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+   }
+   &__row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   &__img {
+      display: block;
+      width: 36px;
+      height: 32px;
+   }
+   &__colum {
+      margin-left: 15px;
+   }
+   &__colum-title,
+   &__colum-link {
+      font-family: "Cormorant Infant", serif;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000;
+      text-transform: uppercase;
+   }
+   &__text {
+      font-family: "Cormorant Infant", serif;
+      font-size: 24px;
+      line-height: 29px;
+      text-indent: 7px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+   }
+   &__item {
+      margin-right: 8px;
+      &:first-child {
+         margin-right: 21px;
+      }
+      &:nth-child(3) {
+         .ContactSection__item {
+            width: 73px;
+            height: 45px;
+         }
+      }
+   }
+   &__link {
+      width: 54px;
+      height: 54px;
+   }
+   &__link-img {
+      width: 100%;
+      height: auto;
+   }
+}
+.catalog__link {
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   display: inline-block;
+   font-family: "Cormorant Infant";
+   font-weight: bold;
+   font-size: 43px;
+   line-height: 52px;
+   text-transform: uppercase;
+   color: #ffffff;
+   background-color: #5a7421;
+   padding: 17px 50px;
+   margin-bottom: 60px;
+}
+.footer {
+   &__row {
+      padding: 17px 0 47px;
+      padding-left: 52px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+   }
+   &__navigation {
+      width: 635px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      justify-content: space-between;
+   }
+   &__link {
+      font-family: "Cormorant Infant", serif;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #000000;
+   }
+}
+
+@import "../scss/globalMedia";

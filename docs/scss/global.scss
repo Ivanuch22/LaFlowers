@@ -347,5 +347,13 @@ body {
       color: #000000;
    }
 }
-
+.name {
+   font-family: "Cormorant Infant", serif;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 36px;
+   text-align: center;
+   color: #5a7421;
+   margin: 41px 0 60px;
+}
 @import "../scss/globalMedia";

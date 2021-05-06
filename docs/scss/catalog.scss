@@ -1,0 +1,194 @@
+@import "../scss/_nuleStyle";
+@import "../scss/global.scss";
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.block {
+   max-width: 715px;
+   display: grid;
+   grid-template-columns: 229px 229px 229px;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: 43px 15px;
+   &__item {
+      font-family: "Cormorant Infant";
+      font-weight: 500;
+   }
+   &__img {
+      margin-bottom: 15px;
+      width: 100%;
+      height: 229px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+   &__title {
+      font-size: 21px;
+      line-height: 25px;
+      text-transform: uppercase;
+   }
+   &__description {
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+   }
+   &__price {
+      margin: 10px 0;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   &__price--number {
+      font-size: 24px;
+      line-height: 29px;
+   }
+   &__button {
+      font-size: 21px;
+      line-height: 25px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #5a7421;
+      text-align: center;
+      padding: 4px 12px;
+      border: 1px solid #5a7421;
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transition: all 0.5s;
+      transform: translateX(-50%);
+      &:hover {
+         background-color: #5a7421;
+         color: #fff;
+      }
+   }
+}
+.aside {
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      margin: 0 0 38px 0;
+      color: #000000;
+   }
+   &__title--flowers {
+      margin-bottom: 62px;
+      margin-top: 38px;
+   }
+   &__title--color {
+      margin: 50px 0 16px;
+   }
+   &__title--reception {
+      margin-top: 28px;
+   }
+   &__title--subjects {
+      margin-top: 55px;
+   }
+   &__label-text {
+      margin-left: 27px;
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+   }
+   &__label-radio {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      position: relative;
+      &::after {
+         border-radius: 50%;
+         content: "";
+         position: absolute;
+         top: 3px;
+         left: 0;
+         width: 17px;
+         height: 17px;
+         background-color: #ffff;
+      }
+      &:checked {
+         &::after {
+            background-color: rgb(206, 206, 206);
+         }
+      }
+   }
+   &__color-radio {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      width: 28px;
+      height: 28px;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color: #333;
+         width: 28px;
+         height: 28px;
+         border-radius: 50%;
+      }
+      &:checked {
+         &::after {
+            border: 2px solid #2962ff;
+         }
+      }
+   }
+   &__reception-button {
+      display: block;
+      margin-bottom: 7px;
+      background-color: transparent;
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+   }
+}
+//цвета
+.pink {
+   &::after {
+      background-color: #ffadfc;
+   }
+}
+.red {
+   &::after {
+      background-color: #ff0000;
+   }
+}
+.yellow {
+   &::after {
+      background-color: #ffd600;
+   }
+}
+.green {
+   &::after {
+      background-color: #5bcf00;
+   }
+}
+.blue {
+   &::after {
+      background-color: #0091cf;
+   }
+}
+.purple {
+   &::after {
+      background-color: #7400cf;
+   }
+}
+.white {
+   &::after {
+      background-color: #fff;
+   }
+}
+.arrowDown {
+   text-align: center;
+}

@@ -1,8 +1,4 @@
 @media (max-width: 1024px) {
-   .card__name {
-      font-size: 48px;
-      line-height: 58px;
-   }
    .card__button {
       font-size: 45px;
       line-height: 55px;
@@ -45,9 +41,7 @@
    .swiper-title {
       font-size: 21px;
    }
-   .card__name {
-      margin: 0 0 30px;
-   }
+
    .arrowDown {
       &__img {
          height: 100%;
@@ -95,10 +89,7 @@
    .secondSection {
       margin-top: 5px;
    }
-   .card__name {
-      font-size: 37px;
-      line-height: 37px;
-   }
+
    .card__price {
       font-size: 30px;
    }

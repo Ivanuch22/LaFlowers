@@ -110,7 +110,19 @@
    }
 }
 @media (max-width: 785px) {
+   .mobileButton {
+      left: 0;
+      width: 80px;
+   }
+   .aside__color-radio::after,
+   .aside__color-radio {
+      margin-bottom: 10px;
+   }
+   .name {
+      margin-bottom: 10px;
+   }
    .block {
+      margin-top: 80px;
       grid-template-columns: 49% 49%;
       gap: 20px 0px;
       max-width: 100%;
@@ -127,8 +139,49 @@
    }
 }
 @media (max-width: 540px) {
+   .aside__title--flowers {
+      margin-top: 20px;
+   }
+   .aside__title--subjects {
+      margin-top: 30px;
+   }
+   .aside__reception-button {
+      font-size: 29px;
+      line-height: 30px;
+   }
+   .aside__label-text {
+      font-size: 25px;
+      margin-left: 40px;
+      line-height: 38px;
+   }
+   .aside__label-radio::after {
+      top: 9px;
+      width: 30px;
+      height: 30px;
+   }
+   .aside__title {
+      margin-bottom: 15px;
+      font-size: 41px;
+      line-height: 52px;
+   }
+   .aside__range {
+      margin-top: 41px;
+   }
+   .aside__range::before,
+   .aside__range::after {
+      font-size: 23px;
+      line-height: 37px;
+      top: -34px;
+   }
    .aside {
-      display: none;
+      left: 0px;
+      right: 0px;
+      padding: 20px 0 40px 25px;
+   }
+   .aside__color-radio::after,
+   .aside__color-radio {
+      width: 45px;
+      height: 45px;
    }
    .block__button {
       font-size: 21px;

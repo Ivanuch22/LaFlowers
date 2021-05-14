@@ -75,6 +75,7 @@
       margin: 0 0 38px 0;
       color: #000000;
    }
+
    &__title--flowers {
       margin-bottom: 62px;
       margin-top: 38px;
@@ -150,7 +151,47 @@
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
+
       text-transform: uppercase;
+   }
+   &__range {
+      &::after {
+         position: absolute;
+         content: "100";
+         left: 0;
+         top: -25px;
+         font-family: "Cormorant Infant", serif;
+         font-weight: bold;
+         font-size: 14px;
+         line-height: 17px;
+         text-transform: uppercase;
+         color: #717171;
+      }
+      &::before {
+         position: absolute;
+         top: -25px;
+         content: "20 000";
+         right: -20px;
+         font-family: "Cormorant Infant", serif;
+         font-weight: bold;
+         font-size: 14px;
+         line-height: 17px;
+         text-transform: uppercase;
+         color: #717171;
+      }
+      position: relative;
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #717171;
+      width: 250px;
+      height: 2px;
+      &::-webkit-slider-thumb {
+         -webkit-appearance: none;
+         appearance: none;
+         height: 10px;
+         width: 2px;
+         background-color: #686868;
+      }
    }
 }
 //цвета
@@ -192,3 +233,5 @@
 .arrowDown {
    text-align: center;
 }
+
+@import "../scss/catalogMedia";

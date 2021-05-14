@@ -142,10 +142,10 @@
          <div class="wrapper">
             <aside class="aside">
                <div class="aside__title aside__title--price">цена</div>
-               <input type="range" name="" id="">
+               <input class="aside__range" type="range" name="" id="">
                <div class="aside__title aside__title--flowers">цветы</div>
                <label class="aside__label">
-                  <input class="aside__label-radio" type="radio" name="radio" id="">
+                  <input class="aside__label-radio" type="radio" name="radio" id="" min="0" max="20000">
                   <p class="aside__label-text">Розы</p>
                </label>
                <label class="aside__label">
@@ -184,6 +184,7 @@
                <button class="aside__reception-button">Подарок</button>
                <div class="aside__title aside__title--subjects ">тематика</div>
             </aside>
+            <button class="mobileButton"><img src="img/imgMobileButton.svg" alt=""></button>
             <ul class="block">
                <li class="block__item">
                   <a class="block__link" href="card.html">
@@ -376,6 +377,13 @@
    </footer>
 
    <script src="js/main.min.js"></script>
+   <script>
+      const asideMobileButton = document.querySelector('.mobileButton');
+      const asideBlock = document.querySelector('.aside');
+      asideMobileButton.addEventListener('click', function () {
+         asideBlock.classList.toggle('aside--active');
+      })
+   </script>
 </body>
 
 </html>

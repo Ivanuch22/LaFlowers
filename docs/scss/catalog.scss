@@ -10,7 +10,6 @@
    max-width: 715px;
    display: grid;
    grid-template-columns: 229px 229px 229px;
-   grid-template-rows: 1fr 1fr 1fr;
    gap: 43px 15px;
    &__item {
       font-family: "Cormorant Infant";
@@ -65,6 +64,9 @@
       }
    }
 }
+.show {
+   display: none;
+}
 .aside {
    &__title {
       font-family: "Cormorant Infant", serif;
@@ -77,7 +79,6 @@
    }
 
    &__title--flowers {
-      margin-bottom: 62px;
       margin-top: 38px;
    }
    &__title--color {
@@ -85,6 +86,9 @@
    }
    &__title--reception {
       margin-top: 28px;
+   }
+   &__title--price {
+      margin-bottom: 60px;
    }
    &__title--subjects {
       margin-top: 55px;
@@ -231,6 +235,7 @@
    }
 }
 .arrowDown {
+   margin-top: 15px;
    text-align: center;
 }
 

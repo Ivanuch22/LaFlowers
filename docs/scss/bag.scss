@@ -1,0 +1,346 @@
+@import "../scss/_nuleStyle";
+@import "../scss/global.scss";
+.card__slider {
+   position: relative;
+   max-width: 1157px;
+   margin: 0 auto;
+}
+.swiper {
+   &-slide {
+      display: block;
+   }
+   &-img {
+      display: block;
+      width: 100%;
+      max-height: 246px;
+      margin-bottom: 12px;
+   }
+
+   &-title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: uppercase;
+   }
+   &-description {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+   }
+   &-price {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      text-align: center;
+   }
+   &-button {
+      font-family: "Cormorant Infant", serif;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #5a7421;
+      background-color: transparent;
+      border: 1px solid #5a7421;
+      padding: 4px 11px;
+      position: relative;
+      margin-top: 5px;
+      left: 50%;
+      transition: all 0.4s;
+      transform: translateX(-50%);
+      &:hover {
+         background-color: #81a459;
+         color: #fff;
+      }
+   }
+   &-container {
+      position: initial;
+      max-width: 470px;
+      overflow: hidden;
+   }
+}
+.span-row {
+   transform: translateX(20px);
+   display: flex;
+   align-items: center;
+}
+.swiper-prev-arrow,
+.swiper-next-arrow {
+   cursor: pointer;
+   width: 32px;
+   z-index: 200;
+   opacity: 0.4;
+   height: 80px;
+   position: absolute;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center center;
+   top: 30%;
+   transform: translate(-50%);
+   background-image: url(../img/sliderArrow.svg);
+}
+.swiper-next-arrow {
+   right: -10px;
+}
+.swiper-prev-arrow {
+   transform: rotate(180deg);
+   left: 0;
+}
+.header {
+   margin-bottom: 35px;
+}
+.wrapper {
+   display: flex;
+   min-height: 100vh;
+}
+.block {
+   margin-left: 40px;
+   margin-right: 55px;
+   &__title {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      margin-left: 17px;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 21px;
+   }
+   &__bottom {
+      max-width: 595px;
+      margin-top: 111px;
+   }
+   &__text {
+      margin-bottom: 25px;
+      font-family: "Cormorant Infant", serif;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 30px;
+      text-transform: uppercase;
+   }
+}
+.card {
+   display: flex;
+   max-width: 496px;
+   position: relative;
+   font-family: "Cormorant Infant", serif;
+   font-weight: 300;
+   &__img {
+      min-width: 165px;
+      margin-right: 23px;
+      height: 150px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-top: 7px;
+   }
+   &__right {
+      width: 100%;
+   }
+   &__title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 7px;
+   }
+   &__price-button {
+      background-color: transparent;
+      border-radius: 50%;
+      width: 16px;
+      position: relative;
+      height: 16px;
+      border: 2px solid #000;
+   }
+   &__price-button--minus {
+      margin-right: 12px;
+      &::before {
+         content: "";
+         background-image: url(../img/minus.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         width: 8px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         height: 2px;
+      }
+   }
+   &__price-button--plus {
+      margin-left: 12px;
+      &::before {
+         content: "";
+         background-image: url(../img/plus.svg);
+         background-repeat: no-repeat;
+         background-size: contain;
+         width: 8px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         height: 8px;
+      }
+   }
+   &__text {
+      font-size: 20px;
+      line-height: 24px;
+      color: #545454;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:last-child {
+         margin-top: 12px;
+         margin-bottom: 40px;
+      }
+      &:nth-child(3) {
+         .card__price {
+            &::before {
+               display: none;
+            }
+         }
+      }
+   }
+   &__price {
+      font-size: 20px;
+      line-height: 24px;
+      color: #000;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &::before {
+         position: absolute;
+         right: -11px;
+         top: 7px;
+         content: "";
+         background-image: url(../img/rubl.svg);
+         width: 9px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center center;
+         height: 11px;
+      }
+   }
+   &__row {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      bottom: 0;
+      left: 0;
+   }
+   &__row-text {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      margin-left: 51px;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000;
+   }
+   &__row-button {
+      background-image: url(../img/Group.svg);
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-position: center center;
+      margin-left: 8px;
+      &:hover {
+         &::before {
+            opacity: 1;
+            z-index: 2;
+         }
+      }
+      &::before {
+         transition: all 0.4s;
+         content: "При выборе функции «Бесконтактная доставка» курьер оставит заказ у двери, отойдет на расстояние не менее трех метров и сообщит о доставке по телефону. Все курьеры проходят мед. обследование каждый день, используют защитные маски и антисептик.";
+         font-family: "Cormorant Infant", serif;
+         font-weight: 300;
+         width: 477px;
+         font-size: 10px;
+         line-height: 12px;
+         text-transform: uppercase;
+         position: absolute;
+         left: 0;
+         bottom: -50px;
+         opacity: 0;
+         z-index: -2;
+      }
+   }
+   &__row-selector {
+      position: relative;
+   }
+   &__row-slide {
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: -7px;
+         width: 30px;
+         height: 15px;
+         background-color: #000;
+         z-index: 2;
+         border-radius: 20px;
+      }
+      &::after {
+         transition: all 0.4s;
+         z-index: 3;
+         content: "";
+         left: 3px;
+         top: -4px;
+         position: absolute;
+         width: 9px;
+         height: 9px;
+         border-radius: 50%;
+         background-color: #fff;
+      }
+   }
+   &__row-input {
+      z-index: -22;
+      display: none;
+      &:checked + .card__row-slide {
+         &::after {
+            transform: translateX(15px);
+         }
+      }
+   }
+}
+.aside {
+   min-width: 280px;
+   &__text {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 40px;
+      line-height: 29px;
+   }
+   &__block {
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      display: block;
+      background-color: rgba(#c4c4c4, 0.46);
+      max-width: 280px;
+      padding: 0 26px;
+      margin-bottom: 30px;
+      padding-top: 24px;
+      padding-bottom: 14px;
+      min-height: 125px;
+      transition: all 0.4s;
+      &:hover {
+         background-color: rgba(#a5a1a1, 0.46);
+      }
+   }
+   &__title {
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+   }
+   &__description {
+      font-size: 20px;
+      color: #5a7421;
+      line-height: 24px;
+      text-align: center;
+   }
+}
+@import "../scss/bagMedia";

@@ -253,6 +253,13 @@
       line-height: 41px;
    }
 }
+@media (max-width: 768px) {
+   .ContactSection__title {
+      margin: 35px 0 30px;
+      font-size: 45px;
+      line-height: 48px;
+   }
+}
 @media (max-width: 600px) {
    .ContactSection__maps {
       height: 300px;

@@ -239,6 +239,24 @@
       line-height: 24px;
       color: #000;
    }
+   &__row-button-text {
+      transition: all 0.4s;
+      font-family: "Cormorant Infant", serif;
+      font-weight: 300;
+      width: 477px;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      opacity: 0;
+      z-index: -2;
+   }
+   &__row-button-text--active {
+      z-index: 2;
+      opacity: 1;
+   }
    &__row-button {
       background-image: url(../img/Group.svg);
       width: 20px;
@@ -246,27 +264,6 @@
       background-size: contain;
       background-position: center center;
       margin-left: 8px;
-      &:hover {
-         &::before {
-            opacity: 1;
-            z-index: 2;
-         }
-      }
-      &::before {
-         transition: all 0.4s;
-         content: "При выборе функции «Бесконтактная доставка» курьер оставит заказ у двери, отойдет на расстояние не менее трех метров и сообщит о доставке по телефону. Все курьеры проходят мед. обследование каждый день, используют защитные маски и антисептик.";
-         font-family: "Cormorant Infant", serif;
-         font-weight: 300;
-         width: 477px;
-         font-size: 10px;
-         line-height: 12px;
-         text-transform: uppercase;
-         position: absolute;
-         left: 0;
-         bottom: -50px;
-         opacity: 0;
-         z-index: -2;
-      }
    }
    &__row-selector {
       position: relative;

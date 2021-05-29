@@ -177,5 +177,10 @@
    transform: rotate(180deg);
    left: 0;
 }
+.arrow {
+   position: absolute;
+   bottom: 18px;
+   left: 51%;
+}
 
 @import "_cardMedia.scss";

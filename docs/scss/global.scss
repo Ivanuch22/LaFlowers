@@ -9,9 +9,12 @@ body {
    padding: 0 10px;
    position: relative;
 }
+.arrowDown {
+   display: block;
+}
 .button {
    position: relative;
-   bottom: 24px;
+   bottom: 121px;
    left: 50%;
    background-color: transparent;
    transform: translateX(-50%);
@@ -22,6 +25,7 @@ body {
    text-indent: 7px;
    color: #5a7421;
    .arrow {
+      display: block;
       position: relative;
       bottom: 15px;
       transform: translateX(-24%);

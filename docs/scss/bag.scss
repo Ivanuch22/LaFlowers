@@ -110,7 +110,7 @@
    }
    &__bottom {
       max-width: 595px;
-      margin-top: 111px;
+      margin-top: 20px;
    }
    &__text {
       margin-bottom: 25px;
@@ -193,7 +193,7 @@
       align-items: center;
       &:last-child {
          margin-top: 12px;
-         margin-bottom: 40px;
+         margin-bottom: 15px;
       }
       &:nth-child(3) {
          .card__price {
@@ -244,11 +244,9 @@
       font-size: 10px;
       line-height: 12px;
       text-transform: uppercase;
-      position: absolute;
-      left: 0;
-      bottom: -50px;
       opacity: 0;
       z-index: -2;
+      margin-top: 10px;
    }
    &__row-button-text--active {
       z-index: 2;
@@ -336,5 +334,8 @@
       line-height: 24px;
       text-align: center;
    }
+}
+.card__row {
+   position: relative;
 }
 @import "../scss/bagMedia";

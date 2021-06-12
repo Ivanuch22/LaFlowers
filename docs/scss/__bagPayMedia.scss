@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 768px) {
+   .card {
+      padding-right: 0;
+   }
    .arrow__Down {
       margin: 10px 0;
       height: 80px;

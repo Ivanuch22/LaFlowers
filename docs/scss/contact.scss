@@ -14,6 +14,20 @@
    line-height: 58px;
    text-transform: uppercase;
    color: #81a459;
+   position: relative;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 51%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 80px;
+      bottom: -65px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url(../img/Arrow.svg);
+   }
 }
 .row {
    display: flex;

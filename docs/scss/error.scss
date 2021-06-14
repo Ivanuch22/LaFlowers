@@ -1,0 +1,50 @@
+@import "../scss/_nuleStyle";
+@import "../scss/global.scss";
+.wrapper {
+   display: inline-block;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.number {
+   font-family: "Cormorant Infant", serif;
+   font-weight: 500;
+   font-size: 144px;
+   line-height: 174px;
+}
+.text {
+   font-family: "Cormorant Infant", serif;
+   font-weight: 500;
+   font-size: 36px;
+   width: 590px;
+   margin-bottom: 40px;
+   line-height: 44px;
+   text-transform: uppercase;
+}
+.button__main {
+   font-family: "Cormorant Infant", serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 29px;
+   padding: 22px;
+   border: 1px solid rgba(0, 0, 0, 0.46);
+   text-transform: uppercase;
+}
+@media (max-width: 700px) {
+   .number {
+      font-size: 80px;
+      line-height: 130px;
+   }
+   .text {
+      font-size: 23px;
+      max-width: 590px;
+      width: auto;
+      margin-bottom: 30px;
+      line-height: 28px;
+   }
+   .button__main {
+      font-size: 23px;
+      line-height: 27px;
+      padding: 10px;
+   }
+}

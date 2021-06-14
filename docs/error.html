@@ -11,8 +11,7 @@
       rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   <link rel="stylesheet" href="css/bag.css">
-   <link rel="stylesheet" href="css/bagPay.css">
+   <link rel="stylesheet" href="css/error.css">
 </head>
 
 <body>
@@ -141,148 +140,11 @@
             </div>
          </header>
          <div class="wrapper">
-            <div class="block">
-               <h2 class="block__title">Детали заказа:</h2>
-               <div class="card">
-                  <div class="card__img" style="background-image: url(img/DSC05245.jpg);"></div>
-                  <div class="card__right">
-                     <div class="card__title">Название товара:</div>
-                     <div class="card__text">Стоимость:<span class="card__price coast">2500</span></div>
-                     <div class="card__text ">Количество: <span class="span-row"><button
-                              class="card__price-button card__price-button--minus"></button> <span
-                              class="card__price card__amount"> 1 </span><button
-                              class="card__price-button card__price-button--plus"></button> </span></div>
-                     <div class="card__text ">Стоимость доставки: <span class="card__price delivery">300</span></div>
-                     <div class="card__text">Скидка:<span class="card__price discount">100</span></div>
-                     <div class="card__text">ИТОГО:<span class="card__price totalCoast">2700</span></div>
-                  </div>
-
-               </div>
-               <div class="card__row">
-                  <div class="card__row-selector">
-                     <label class="card__row-label">
-                        <input class="card__row-input" type="checkbox" name="" id="">
-                        <div class="card__row-slide"></div>
-                     </label>
-                  </div>
-                  <div class="card__row-text">Бесконтактная доставка</div>
-                  <div class="card__row-button"></div>
-               </div>
-               <div class="card__row-button-text">При выборе функции «Бесконтактная доставка» курьер оставит заказ
-                  у
-                  двери, отойдет на расстояние не менее трех метров и сообщит о доставке по телефону. Все курьеры
-                  проходят мед. обследование каждый день, используют защитные маски и антисептик.</div>
-               <div class="block__bottom">
-                  <div class="block__text">Дополните заказ при ятными мелочами:</div>
-                  <div class="card__slider">
-                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                           <a href="#" class="swiper-slide">
-                              <img class="swiper-img" src="img/00002627.jpg" alt="">
-                              <div class="swiper-title">Название товара</div>
-                              <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
-                              <div class="swiper-price">2500р</div>
-                              <button class="swiper-button">В Корзину</button>
-                           </a>
-                           <a href="#" class="swiper-slide">
-                              <img class="swiper-img" src="img/00002627.jpg" alt="">
-                              <div class="swiper-title">Название товара</div>
-                              <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
-                              <div class="swiper-price">2500р</div>
-                              <button class="swiper-button">В Корзину</button>
-                           </a>
-                           <a href="#" class="swiper-slide">
-                              <img class="swiper-img" src="img/TT-00001516_1.jpg" alt="">
-                              <div class="swiper-title">Название товара</div>
-                              <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
-                              <div class="swiper-price">2500р</div>
-                              <button class="swiper-button">В Корзину</button>
-                           </a>
-                           <a href="#" class="swiper-slide">
-                              <img class="swiper-img" src="img/00003046_1.jpg" alt="">
-                              <div class="swiper-title">Название товара</div>
-                              <div class="swiper-description">тип товара: <span class="swiper-type">ВАЗА</span></div>
-                              <div class="swiper-price">2500р</div>
-                              <button class="swiper-button">В Корзину</button>
-                           </a>
-                        </div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-next-arrow"></div>
-                        <div class="swiper-prev-arrow"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <a class="arrow__Down" href="#id"><img class="arrow__Down-img" src="img/Arrow.svg" alt=""></a>
-            <div class="aside" id="id">
-               <form class="aside__form" action="#">
-                  <div class="aside__block">
-                     <div class="aside__title">Данные получателя:</div>
-                     <input class="aside__input" type="text" placeholder="Имя">
-                     <input class="aside__input" type="number" placeholder="Телефон*">
-                     <input class="aside__input" type="email" placeholder="Ваш Email">
-                     <div class="aside__block-text">Отправим фото до доставки и чек</div>
-                  </div>
-                  <div class="aside__block">
-                     <div class="aside__title">Адрес доставки:</div>
-                     <input class="aside__input" type="text" placeholder="Улица*">
-                     <input class="aside__input" type="text" placeholder="Дом*">
-                     <input class="aside__input" type="text" placeholder="Кв/офис*">
-                     <input class="aside__input" type="text" placeholder="Комментарий к доставке">
-                     <div class="card__row">
-                        <div class="card__row-selector">
-                           <label class="card__row-label">
-                              <input class="card__row-input" type="checkbox" name="" id="">
-                              <div class="card__row-slide"></div>
-                           </label>
-                        </div>
-                        <div class="card__row-text">Не уверены, что будете на месте? Мы уточним по телефону</div>
-                     </div>
-                  </div>
-                  <div class="aside__block">
-                     <div class="aside__title">Когда доставить?</div>
-                     <input class="aside__input" type="date" aria-required="true" required="" value="12-03-2021">
-                     <input class="aside__input" type="time">
-                  </div>
-                  <div class="aside__block">
-                     <div class="aside__title">Выберите способ оплаты:</div>
-                     <div class="card__row">
-                        <div class="card__row-selector">
-                           <label class="card__row-label">
-                              <input class="card__row-input" type="checkbox" name="" id="">
-                              <div class="card__row-slide"></div>
-                           </label>
-                        </div>
-                        <div class="card__row-text">наличными курьеру</div>
-                     </div>
-                     <div class="card__row">
-                        <div class="card__row-selector">
-                           <label class="card__row-label">
-                              <input class="card__row-input" type="checkbox" name="" id="">
-                              <div class="card__row-slide"></div>
-                           </label>
-                        </div>
-                        <div class="card__row-text">Банковск ой картой курьеру</div>
-                     </div>
-                     <div class="card__row">
-                        <div class="card__row-selector">
-                           <label class="card__row-label">
-                              <input class="card__row-input" type="checkbox" name="" id="">
-                              <div class="card__row-slide"></div>
-                           </label>
-                        </div>
-                        <div class="card__row-text">Оплатить онлайн</div>
-                     </div>
-                     <a href="#" class="aside__link-text">Оформляя данный заказ напрямую с «LaFlawers», <br> вы
-                        принимаете
-                        соглашение об обработке персональных данных <br> и Условия использования сервиса</a>
-                  </div>
-                  <div class="aside__button">Завершить оформление</div>
-               </form>
-            </div>
+            <div class="number">404</div>
+            <div class="text">Похоже, мы не можем найти
+               нужную Вам страницу!</div>
+            <a class="button__main" href="index.html">Перейти на главную</a>
          </div>
-      </div>
    </section>
    <section class="ContactSection">
       <button class="ContactSection__button button">
@@ -368,7 +230,6 @@
    </footer>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="js/main.min.js"></script>
-   <script src="js/bag.js"></script>
 </body>
 
 </html>

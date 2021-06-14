@@ -1,0 +1,60 @@
+@import "../scss/_nuleStyle";
+@import "../scss/global.scss";
+
+.wrapper {
+   margin-left: 60px;
+}
+.title {
+   font-family: "Cormorant Infant", serif;
+   font-weight: 500;
+   font-size: 48px;
+   text-align: center;
+   display: block;
+   margin-bottom: 78px;
+   line-height: 58px;
+   text-transform: uppercase;
+   color: #81a459;
+   position: relative;
+}
+.text {
+   br {
+      display: block;
+   }
+   font-family: "Cormorant Infant", serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 29px;
+   text-transform: uppercase;
+   margin-bottom: 18px;
+   &__block {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: rgba(21, 21, 21, 0.7);
+      border: 1px solid #81a459;
+      width: 70px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 10px;
+   }
+}
+.small {
+   max-width: 750px;
+   margin-bottom: 40px;
+}
+.main__button {
+   font-family: Cormorant Infant;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: right;
+   text-transform: uppercase;
+   color: #ffffff;
+   padding: 17px 15px;
+   background-color: #81a459;
+   margin-top: 70px;
+   margin-bottom: 20px;
+   display: inline-block;
+}
+@import "_campaignMedia.scss";

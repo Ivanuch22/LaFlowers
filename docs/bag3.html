@@ -12,6 +12,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/bag.css">
+   <link rel="stylesheet" href="css/bagPay.css">
 </head>
 
 <body>
@@ -213,28 +214,57 @@
                   </div>
                </div>
             </div>
-            <div class="aside">
-               <div class="aside__text">Кто будет получать заказ?</div>
-               <ul class="ul">
-                  <li>
-                     <a class="aside__block" href="bag1.html">
-                        <div class="aside__title">Я сам(а)</div>
-                        <div class="aside__description">Заказ будет доставлен вам лично</div>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="aside__block" href="bag2.html">
-                        <div class="aside__title">Другой(ая)</div>
-                        <div class="aside__description">Заказ будет доставлен другому человеку</div>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="aside__block" href="bag3.html">
-                        <div class="aside__title"> Заберу сам(а)</div>
-                        <div class="aside__description">Заказ будет ждать васа одной из мастерских</div>
-                     </a>
-                  </li>
-               </ul>
+            <a class="arrow__Down" href="#id"><img class="arrow__Down-img" src="img/Arrow.svg" alt=""></a>
+            <div class="aside" id="id">
+               <form class="aside__form" action="#">
+                  <div class="aside__block">
+                     <div class="aside__title">Ваши данные:</div>
+                     <input class="aside__input" type="text" placeholder="Имя">
+                     <input class="aside__input" type="number" placeholder="Телефон*">
+                     <input class="aside__input" type="email" placeholder="Ваш Email">
+                     <div class="aside__block-text">Отправим фото до доставки и чек</div>
+                  </div>
+                  <div class="aside__block"></div>
+                  <div class="aside__block">
+                     <div class="aside__title">Когда заберете?</div>
+                     <input class="aside__input" type="date" aria-required="true" required="" value="12-03-2021">
+                     <input class="aside__input" type="time">
+                  </div>
+                  <div class="aside__block">
+                     <div class="aside__title">Выберите способ оплаты:</div>
+                     <div class="card__row">
+                        <div class="card__row-selector">
+                           <label class="card__row-label">
+                              <input class="card__row-input" type="checkbox" name="" id="">
+                              <div class="card__row-slide"></div>
+                           </label>
+                        </div>
+                        <div class="card__row-text">наличными курьеру</div>
+                     </div>
+                     <div class="card__row">
+                        <div class="card__row-selector">
+                           <label class="card__row-label">
+                              <input class="card__row-input" type="checkbox" name="" id="">
+                              <div class="card__row-slide"></div>
+                           </label>
+                        </div>
+                        <div class="card__row-text">Банковск ой картой курьеру</div>
+                     </div>
+                     <div class="card__row">
+                        <div class="card__row-selector">
+                           <label class="card__row-label">
+                              <input class="card__row-input" type="checkbox" name="" id="">
+                              <div class="card__row-slide"></div>
+                           </label>
+                        </div>
+                        <div class="card__row-text">Оплатить онлайн</div>
+                     </div>
+                     <a href="#" class="aside__link-text">Оформляя данный заказ напрямую с «LaFlawers», <br> вы
+                        принимаете
+                        соглашение об обработке персональных данных <br> и Условия использования сервиса</a>
+                  </div>
+                  <div class="aside__button">Завершить оформление</div>
+               </form>
             </div>
          </div>
       </div>
